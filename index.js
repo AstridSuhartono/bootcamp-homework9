@@ -1,7 +1,8 @@
+require("dotenv").config();
 const generateMarkdown = require("./utils/generateMarkdown");
 const inquirer = require("inquirer");
 const fs = require("fs");
-const dotenv = require("dotenv").config();
+
 
 
 const questions = [
@@ -40,7 +41,8 @@ const questions = [
         "GNU General Public License v3.0", 
         "MIT",
         "Open Software License 3.0"
-        ]
+        ],
+        default: 0
     },
     {
         type: "input",
@@ -64,11 +66,12 @@ inquirer.prompt(questions)
 
 
 function writeToFile(fileName, data) {
-    let fileName = process.env.FILENAME;
-    fs.writeFile(fileName,JSON.stringify(data, null, '\n'),function(err){
+    fileName = "ProjectREADME.md";
+    fs.writeFile(fileName, data ,function(err){
         if (err) {
             return console.log(err);
           }
+          generateMarkdown(data);
           console.log("readme file successfuly created!");
     })
 }
