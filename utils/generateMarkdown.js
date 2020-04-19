@@ -2,7 +2,7 @@ function generateMarkdown(data) {
   return `
 # ${data.title}
 
-## Description
+## Project Description
 
 ${data.description}
 
@@ -22,11 +22,13 @@ ${data.usage}
 
 ${data.license}
 ## License
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)]
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)  
 
 ## Contributing
+
+How you can help contributing to the project
 
 ${data.contributor}
 

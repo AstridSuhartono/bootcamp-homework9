@@ -2,10 +2,12 @@ require("dotenv").config();
 const generateMarkdown = require("./utils/generateMarkdown");
 const inquirer = require("inquirer");
 const fs = require("fs");
+const util = require("util");
 
+const writeFileAsync = util.promisify(fs.writeFile);
 
-
-const questions = [
+function promptUser(){
+    return inquirer.prompt([
     {    
         type: "input",
         name: "title",
@@ -59,25 +61,19 @@ const questions = [
         message: "What is your github email?",
         name: "email"
     }
-];
-
-inquirer.prompt(questions)
-.then(writeToFile);
-
-
-function writeToFile(fileName, data) {
-    fileName = "ProjectREADME.md";
-    fs.writeFile(fileName, data ,function(err){
-        if (err) {
-            return console.log(err);
-          }
-          generateMarkdown(data);
-          console.log("readme file successfuly created!");
-    })
+]);
 }
 
-function init() {
-
-}
+async function init() {
+    console.log("Hi please enter the necessary information for the readme file")
+    try{
+        const data = await promptUser();
+        const readme = generateMarkdown(data);
+        await writeFileAsync("ProjectREADME.md",readme);
+        console.log("Successfully wrote to the project readme");
+    } catch(err) {
+      console.log(err);
+    }
+  }
 
 init();
