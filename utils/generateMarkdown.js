@@ -28,7 +28,7 @@ ${data.license}
 
 ## Contributing
 
-${data.contents}
+${data.contributor}
 
 ## Tests
 
