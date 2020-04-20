@@ -7,7 +7,19 @@ None
 
 ## Table of Contents
 
-undefined
+* Project Description
+* Table of Contents
+* Project Version
+* Installation
+* Usage
+* License
+* Contributing
+* Tests
+* Questions
+
+## Project Version
+
+None
 
 ## Installation
 
@@ -20,6 +32,7 @@ None
 ## License
 
 Apache license 2.0
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Contributing
@@ -28,7 +41,7 @@ None
 
 ## Tests
 
-undefined
+None
 
 ## Questions
 

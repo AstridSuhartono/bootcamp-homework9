@@ -28,12 +28,6 @@ function promptUser(){
     },
     {    
         type: "input",
-        name: "content",
-        message: "What is the table of content for the project?",
-        default: "None"
-    },
-    {    
-        type: "input",
         name: "installation",
         message: "How to install the project?",
         default: "None"
@@ -59,7 +53,7 @@ function promptUser(){
     {
         type: "input",
         message: "How to contribute for the project?",
-        name: "contributor",
+        name: "contribute",
         default: "None"
     },
     {

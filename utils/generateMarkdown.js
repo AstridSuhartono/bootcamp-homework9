@@ -8,7 +8,19 @@ ${data.description}
 
 ## Table of Contents
 
-${data.contents}
+* Project Description
+* Table of Contents
+* Project Version
+* Installation
+* Usage
+* License
+* Contributing
+* Tests
+* Questions
+
+## Project Version
+
+${data.version}
 
 ## Installation
 
@@ -21,15 +33,16 @@ ${data.usage}
 ## License
 
 ${data.license}
+
 ${badge}
 
 ## Contributing
 
-${data.contributor}
+${data.contribute}
 
 ## Tests
 
-${data.tests}
+${data.test}
 
 ## Questions
 
