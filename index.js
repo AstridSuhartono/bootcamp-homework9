@@ -94,19 +94,16 @@ async function init() {
     try{
         const data = await promptUser();
         const license = data.license;
-        console.log(license);
-        const badge = renderBadge(license);
-        console.log(badge);
+        const badge = await renderBadge(license);
         const readme = generateMarkdown(data,badge);
         await writeFileAsync("PROJECT_README.md",readme);
-
         console.log("Successfully create the project readme");
     } catch(err) {
       console.log(err);
     }
 }
 
-function renderBadge(license){
+async function renderBadge(license){
     let badge = "";
     switch(license){
         case "Apache license 2.0":
