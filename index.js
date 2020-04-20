@@ -22,6 +22,12 @@ function promptUser(){
     },
     {    
         type: "input",
+        name: "version",
+        message: "What is the project version?",
+        default: "None"
+    },
+    {    
+        type: "input",
         name: "content",
         message: "What is the table of content for the project?",
         default: "None"
@@ -43,13 +49,12 @@ function promptUser(){
         message: "Which license will be used for the project?",
         name: "license",
         choices: [
-        "Academic Free License v3.0", 
-        "Apache license 2.0", 
-        "GNU General Public License v3.0", 
-        "MIT",
-        "Open Software License 3.0"
+            "Apache license 2.0", 
+            "GNU General Public License v3.0", 
+            "MIT",
+            "The Unlicense"
         ],
-        default: 0
+        default: 0,
     },
     {
         type: "input",
@@ -66,12 +71,14 @@ function promptUser(){
     {
         type: "input",
         message: "What is your github username?",
-        name: "username"
+        name: "username",
+        default: "None"
     },
     {
         type: "input",
         message: "What is your github email?",
-        name: "email"
+        name: "email",
+        default: "None"
     }
 ]);
 }
@@ -80,12 +87,33 @@ async function init() {
     console.log("Hi welcome to readme file generator")
     try{
         const data = await promptUser();
-        const readme = generateMarkdown(data);
+        const license = data.license;
+        console.log(license);
+        const badge = renderBadge(license);
+        console.log(badge);
+        const readme = generateMarkdown(data,badge);
         await writeFileAsync("PROJECT_README.md",readme);
-        console.log("Successfully wrote to the project readme");
+
+        console.log("Successfully create the project readme");
     } catch(err) {
       console.log(err);
     }
-  }
+}
+
+function renderBadge(license){
+    let badge = "";
+    switch(license){
+        case "Apache license 2.0":
+            return badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+        case "GNU General Public License v3.0":
+            return badge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+        case "MIT":
+            return badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+        case "The Unlicense":
+            return badge = "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
+        default:
+            console.log("Render badge failed");
+    }
+}
 
 init();
