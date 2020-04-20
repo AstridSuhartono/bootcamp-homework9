@@ -19,7 +19,7 @@ Click the following link to see the video demo:
 
 **Basic Setup**
 
-The application utilise Node and npm, which is scripted in index.js for the main function and generateMarkdown.js to generate the template of the readme file. npm packages used in the application are inquirer, fs, and util.
+The application utilise Node and npm, which is scripted in index.js for the main function and generateMarkdown.js to generate the template of the readme file. Npm packages used in the application are inquirer, fs, and util.
 
 **Usage Instructions**
 

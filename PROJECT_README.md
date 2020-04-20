@@ -7,7 +7,7 @@ None
 
 ## Table of Contents
 
-The following are the content list of the readme file:
+The following are the contents list of the readme file:
 
 * Project Description
 * Table of Contents
@@ -47,9 +47,9 @@ None
 
 ## Questions
 
-Please contact me for any questions related to the application through the email below:
+Please contact me for any questions related to the application through the information below:
 
 Github username: astrid
 
-Github Email: <sf>
+Github Email: <astrid@yahoo.com>
 
