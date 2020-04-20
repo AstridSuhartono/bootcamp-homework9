@@ -28,8 +28,6 @@ ${data.license}
 
 ## Contributing
 
-How you can help contributing to the project
-
 ${data.contributor}
 
 ## Tests
@@ -41,6 +39,8 @@ ${data.tests}
 Please contact me for any questions related to the application through the email below:
 
 ![GitHub profile picture](${data.picture})
+
+Github username: ${data.username}
 
 Github Email: <${data.email}>
 

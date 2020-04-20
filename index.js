@@ -11,27 +11,32 @@ function promptUser(){
     {    
         type: "input",
         name: "title",
-        message: "What is the project title?"
+        message: "What is your project title/name?",
+        default: "Default Project Name"
     },
     {    
         type: "input",
         name: "description",
-        message: "What is the project description?"
+        message: "What is the project description?",
+        default: "None"
     },
     {    
         type: "input",
         name: "content",
-        message: "What is the table of content for the project?"
+        message: "What is the table of content for the project?",
+        default: "None"
     },
     {    
         type: "input",
         name: "installation",
-        message: "How to install the project?"
+        message: "How to install the project?",
+        default: "None"
     },
     {    
         type: "input",
         name: "usage",
-        message: "How to use the project?"
+        message: "How to use the project?",
+        default: "None"
     },
     {
         type: "list",
@@ -48,13 +53,20 @@ function promptUser(){
     },
     {
         type: "input",
-        message: "Who are the contributors for the project?",
-        name: "contributor"
+        message: "How to contribute for the project?",
+        name: "contributor",
+        default: "None"
     },
     {
         type: "input",
         message: "Any tests run on the project?",
-        name: "test"
+        name: "test",
+        default: "None"
+    },
+    {
+        type: "input",
+        message: "What is your github username?",
+        name: "username"
     },
     {
         type: "input",
@@ -65,11 +77,11 @@ function promptUser(){
 }
 
 async function init() {
-    console.log("Hi please enter the necessary information for the readme file")
+    console.log("Hi welcome to readme file generator")
     try{
         const data = await promptUser();
         const readme = generateMarkdown(data);
-        await writeFileAsync("ProjectREADME.md",readme);
+        await writeFileAsync("PROJECT_README.md",readme);
         console.log("Successfully wrote to the project readme");
     } catch(err) {
       console.log(err);
