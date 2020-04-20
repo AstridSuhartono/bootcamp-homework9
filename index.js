@@ -48,7 +48,7 @@ function promptUser(){
             "MIT",
             "The Unlicense"
         ],
-        default: 0,
+        default: 0
     },
     {
         type: "input",
@@ -66,13 +66,25 @@ function promptUser(){
         type: "input",
         message: "What is your github username?",
         name: "username",
-        default: "None"
-    },
+        validate: function(answer)
+        { 
+            if(answer == "") {
+                return "You must enter your github username";
+            }
+            return true;
+        }
+    }, 
     {
         type: "input",
         message: "What is your github email?",
         name: "email",
-        default: "None"
+        validate: function(answer)
+        { 
+            if(answer == "") {
+                return "You must enter your github email";
+            }
+            return true;
+        }
     }
 ]);
 }

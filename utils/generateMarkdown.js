@@ -8,6 +8,8 @@ ${data.description}
 
 ## Table of Contents
 
+The following are the content list of the readme file:
+
 * Project Description
 * Table of Contents
 * Project Version
