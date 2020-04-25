@@ -3,47 +3,51 @@
 
 ## Project Description
 
-None
+Not Available
 
 ## Table of Contents
 
 The following are the contents list of the readme file:
 
-* Project Description
-* Table of Contents
-* Project Version
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
+* [Project Description](#project-description)
+* [Table of Contents](#table-of-contents)
+* [Project Version](#project-version)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Project Version
 
-None
+Current project version: 1.1
 
 ## Installation
 
-None
+How to get the application installed.
+
+node index.js
 
 ## Usage
 
-None
+Step/s to run the application:
+
+Not Available
 
 ## License
 
-Apache license 2.0
+This project is under MIT for licensing.
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contributing
 
-None
+Not Available
 
 ## Tests
 
-None
+Not Available
 
 ## Questions
 
@@ -51,5 +55,5 @@ Please contact me for any questions related to the application through the infor
 
 Github username: astrid
 
-Github Email: <astrid@yahoo.com>
+Github Email: <astrid@email.com>
 

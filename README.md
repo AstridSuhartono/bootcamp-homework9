@@ -13,7 +13,7 @@ CLI application to generate README.md dynamically by using node in terminal. Use
 
 ### Video Recording
 
-Click the following link to see the video demo:
+Click the following link to see the video demo: https://drive.google.com/file/d/1TgA4YyYfEeOZKoE-BDwMRa45n0dQ_g51/view
 
 ### How to Start
 
