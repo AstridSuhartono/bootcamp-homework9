@@ -10,31 +10,35 @@ ${data.description}
 
 The following are the contents list of the readme file:
 
-* Project Description
-* Table of Contents
-* Project Version
-* Installation
-* Usage
-* License
-* Contributing
-* Tests
-* Questions
+* [Project Description](#project-description)
+* [Table of Contents](#table-of-contents)
+* [Project Version](#project-version)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Project Version
 
-${data.version}
+Current project version: ${data.version}
 
 ## Installation
+
+How to get the application installed.
 
 ${data.installation}
 
 ## Usage
 
+Step/s to run the application:
+
 ${data.usage}
 
 ## License
 
-${data.license}
+This project is under ${data.license} for licensing.
 
 ${badge}
 

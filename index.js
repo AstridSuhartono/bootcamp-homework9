@@ -18,25 +18,25 @@ function promptUser(){
         type: "input",
         name: "description",
         message: "What is the project description?",
-        default: "None"
+        default: "Not Available"
     },
     {    
         type: "input",
         name: "version",
         message: "What is the project version?",
-        default: "None"
+        default: "Not Available"
     },
     {    
         type: "input",
         name: "installation",
         message: "How to install the project?",
-        default: "None"
+        default: "node index.js"
     },
     {    
         type: "input",
         name: "usage",
-        message: "How to use the project?",
-        default: "None"
+        message: "How to run the project?",
+        default: "Not Available"
     },
     {
         type: "list",
@@ -48,19 +48,19 @@ function promptUser(){
             "MIT",
             "The Unlicense"
         ],
-        default: 0
+        default: 2
     },
     {
         type: "input",
         message: "How to contribute for the project?",
         name: "contribute",
-        default: "None"
+        default: "Not Available"
     },
     {
         type: "input",
         message: "Any tests run on the project?",
         name: "test",
-        default: "None"
+        default: "Not Available"
     },
     {
         type: "input",
